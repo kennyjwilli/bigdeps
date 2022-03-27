@@ -1,0 +1,6 @@
+{:deps    {org.clojure/tools.deps.alpha {:mvn/version "0.13.1168"}}
+ :aliases {:build   {:deps       {io.github.seancorfield/build-clj {:git/tag "v0.8.0" :git/sha "9bd8b8a"}}
+                     :ns-default build}
+           :bigdeps {:exec-fn   kwill.bigdeps/run
+                     :exec-args {:my     {:data 123}
+                                 :config 456}}}}
